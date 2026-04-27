@@ -39,14 +39,14 @@ html, body {
   content: "";
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
   pointer-events: none;
 }
 
 @media (max-width: 991.98px) {
   .pagina-principal::before {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     inset: 0;
     z-index: -1;
@@ -157,47 +157,7 @@ header .navbar-custom .navbar-toggler {
   text-align: left;
   max-width: 850px;
   align-items: flex-start;
-}
-.seccion-principal .contenido-principal .type {
-  display: inline-block;
-}
-.seccion-principal .contenido-principal .type span {
-  display: inline-block;
-  font-size: 1rem;
-  font-family: "share tech mono", sans-serif;
-  font-weight: 500;
-  color: whitesmoke;
-  margin: 40px 0;
-  text-transform: uppercase;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  position: relative;
-  animation: typing 4.5s steps(31) 0.3s forwards;
-}
-.seccion-principal .contenido-principal .type span::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 2px;
-  height: 100%;
-  background-color: whitesmoke;
-  animation: blink 1.2s step-end infinite;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 31ch;
-  }
-}
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
+  padding-top: 3rem;
 }
 .seccion-principal .contenido-principal h2 {
   font-size: clamp(2.2rem, 5vw, 3.5rem);
@@ -205,7 +165,7 @@ header .navbar-custom .navbar-toggler {
   color: whitesmoke;
   font-family: "Plus jakarta sans", sans-serif;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-  margin: 30px 0;
+  margin: 20px 0;
   line-height: 1.1;
 }
 .seccion-principal .contenido-principal p {
@@ -225,9 +185,13 @@ header .navbar-custom .navbar-toggler {
 .seccion-principal .btn-primario {
   display: inline-block;
   margin-top: 50px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
   color: whitesmoke;
   background-color: rgba(0, 0, 0, 0.85);
   border: 3px solid whitesmoke;
+  border-radius: 15px;
   z-index: 2;
   -webkit-tap-highlight-color: transparent;
 }
@@ -273,14 +237,11 @@ header .navbar-custom .navbar-toggler {
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
     margin: 10px 0 20px 0;
   }
-  .seccion-principal .contenido-principal .type span {
-    font-size: 1.1rem;
-    margin: 20px 0;
-  }
   .seccion-principal .contenido-principal p {
     max-width: 300px;
     font-size: 1.2rem;
     line-height: 1.2;
+    padding-top: 1em;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
   }
   .seccion-principal .contenido-principal .tecnologias {
@@ -291,6 +252,8 @@ header .navbar-custom .navbar-toggler {
   .btn-primario {
     display: flex;
     margin-top: 20px;
+    width: 100%;
+    max-width: 250px;
   }
   .btn-primario:hover, .btn-primario.focus, .btn-primario:active {
     color: whitesmoke;
@@ -305,7 +268,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 0;
-  padding: 30px;
+  padding: 1.5rem 0;
   position: relative;
   z-index: 1;
 }
@@ -315,8 +278,7 @@ footer p {
   font-size: 1.2em;
   font-weight: lighter;
   font-family: "share tech mono", sans-serif;
-  padding-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0.4rem;
 }
 footer {
   /* contenedor de iconos */
@@ -419,8 +381,7 @@ main .boton-scroll {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem auto 0;
-  padding: 0.75rem 1rem;
+  margin: 0 auto;
   font-size: 1.5rem;
   font-weight: 900;
   line-height: 1.2;
